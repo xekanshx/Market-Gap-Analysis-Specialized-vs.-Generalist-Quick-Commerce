@@ -4,6 +4,8 @@ This project analyzes the product assortment, true landed cost, and availability
 The goal of this analysis was to test a core product hypothesis: Generalist quick-commerce platforms fail to meet the specialized depth required by parents, leaving a massive market gap for a specialized quick-commerce player to compete on both price and speed.
 
 🔗 [Live Dashboard](https://datastudio.google.com/reporting/97143527-2922-4e8b-8fe5-cd27aa4da243)
+🔗 [Excel file](https://docs.google.com/spreadsheets/d/1I3vmRgKeJTFTNvSPY7f128t-aBVVg7RKcNCsO7bqjug/edit?usp=sharing)
+
 
 # Data collection
 - I made Gemini generate a list of 30 random babycare and children products.
@@ -36,20 +38,18 @@ SQL (SQLite): Relational data filtering, Common Table Expressions (CTEs), and ag
 
 # 📊 Key Findings & Product Insights
 1. The "Generalist Gap"
-Visual analysis revealed that while Blinkit competes well on speed (~11.5 mins), it completely abandons parents in specialized niche categories. For example, in the Mom care category, OZi and FirstCry maintained a 100% fill rate, while Blinkit dropped to just 25%.
+Visual analysis revealed that while Blinkit competes well on speed (~11.5 mins), it is not specialized for niche categories. For example, in the Mom care category, OZi and FirstCry maintained a 100% fill rate, while Blinkit dropped to just 25%.
 
 2. The Assortment Bias
 Initial raw category averages made FirstCry appear artificially expensive. Visualizing the data proved this was an illusion caused by Assortment Bias: FirstCry frequently stocked out of basic, lower-priced items in the Health and wellness and Bath and skin categories, leaving only premium items to pull their average up.
+<img width="702" height="398" alt="image" src="https://github.com/user-attachments/assets/3fff5f1a-ee6c-47a1-9a90-a2046896ad93" />
 
-3. The "Apples-to-Apples" Price Winner
+
+4. The "Apples-to-Apples" Price Winner
 To remove the Assortment Bias, I engineered a SQL CTE to isolate only the products available across all three platforms simultaneously (a 12-item overlapping basket).
 
-When comparing the exact same basket of goods, the true average landed cost (Discounted Price + Delivery + Handling) proved OZi's unit economics:
+When comparing the exact same basket of goods, the true average landed cost (Discounted Price + Delivery + Handling):
+<img width="898" height="160" alt="image" src="https://github.com/user-attachments/assets/f99b0df0-7212-4d1d-9b4b-5331a3a64237" />
 
-OZi: ₹546.75
-
-Blinkit: ₹554.50
-
-FirstCry: ₹587.25
 
 Conclusion: OZi successfully bridges the market gap. They match the specialized catalog depth of the e-commerce giant (FirstCry) while delivering products exponentially faster, all while maintaining the lowest true basket cost.
