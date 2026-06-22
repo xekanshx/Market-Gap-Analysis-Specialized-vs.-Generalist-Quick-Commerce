@@ -3,7 +3,21 @@ This project analyzes the product assortment, true landed cost, and availability
 
 The goal of this analysis was to test a core product hypothesis: Generalist quick-commerce platforms fail to meet the specialized depth required by parents, leaving a massive market gap for a specialized quick-commerce player to compete on both price and speed.
 
-🔗 [Click Here to View the Live Interactive Dashboard](https://datastudio.google.com/reporting/97143527-2922-4e8b-8fe5-cd27aa4da243)
+🔗 [Live Dashboard](https://datastudio.google.com/reporting/97143527-2922-4e8b-8fe5-cd27aa4da243)
+
+# Data collection
+- I made Gemini generate a list of 30 random babycare and children products.
+<img width="516" height="976" alt="image" src="https://github.com/user-attachments/assets/b12e29b4-af9b-4ce0-ab1f-ae8de2e2931a" />
+- Then I cross searched these products across all 3 sites and noted the details about the pricing, product information and delivery time.
+<img width="1632" height="661" alt="image" src="https://github.com/user-attachments/assets/6d70131d-2f29-49a3-be93-b5b91ef2d49d" />
+
+# Data structure
+- I split the data into two tables, one contained the general information about the product like categroy, brand and product name, while the other contained the factual prices(numeric) and delivery time for each product per platform. (I created artificial product_id to refer to these products uniquely)
+<img width="769" height="683" alt="image" src="https://github.com/user-attachments/assets/e515a60f-2342-4998-9fea-5c48647725d8" />
+<img width="808" height="502" alt="image" src="https://github.com/user-attachments/assets/33462739-9371-4c0e-aa92-57a2c9773baf" />
+
+
+
 
 # 🛠 Tools Used
 1. The "Generalist Gap"
