@@ -8,6 +8,7 @@ The goal of this analysis was to test a core product hypothesis: Generalist quic
 # Data collection
 - I made Gemini generate a list of 30 random babycare and children products.
 <img width="516" height="976" alt="image" src="https://github.com/user-attachments/assets/b12e29b4-af9b-4ce0-ab1f-ae8de2e2931a" />
+
 - Then I cross searched these products across all 3 sites and noted the details about the pricing, product information and delivery time.
 <img width="1632" height="661" alt="image" src="https://github.com/user-attachments/assets/6d70131d-2f29-49a3-be93-b5b91ef2d49d" />
 
@@ -16,6 +17,10 @@ The goal of this analysis was to test a core product hypothesis: Generalist quic
 <img width="769" height="683" alt="image" src="https://github.com/user-attachments/assets/e515a60f-2342-4998-9fea-5c48647725d8" />
 <img width="808" height="502" alt="image" src="https://github.com/user-attachments/assets/33462739-9371-4c0e-aa92-57a2c9773baf" />
 
+# Analysis on Google sheets
+- I created a consolidated table that contained the information from both the tables using VLOOKUP, and a total_landed_cost column.
+- Then with the help of pivot tables, we compared the average price and product availability across each platform for each category.
+<img width="445" height="320" alt="image" src="https://github.com/user-attachments/assets/169f1d09-f90b-47a0-9f87-198fd2a7e1de" />
 
 
 
