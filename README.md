@@ -1,0 +1,1 @@
+# Market-Gap-Analysis-Specialized-vs.-Generalist-Quick-Commerce
