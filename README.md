@@ -45,7 +45,7 @@ Initial raw category averages made FirstCry appear artificially expensive. Visua
 <img width="702" height="398" alt="image" src="https://github.com/user-attachments/assets/3fff5f1a-ee6c-47a1-9a90-a2046896ad93" />
 
 
-4. The "Apples-to-Apples" Price Winner
+3. The "Apples-to-Apples" Price Winner
 To remove the Assortment Bias, I engineered a SQL CTE to isolate only the products available across all three platforms simultaneously (a 12-item overlapping basket).
 
 When comparing the exact same basket of goods, the true average landed cost (Discounted Price + Delivery + Handling):
