@@ -16,6 +16,7 @@ Looker Studio: Executive dashboarding and visual storytelling.
 SQL (SQLite): Relational data filtering, Common Table Expressions (CTEs), and aggregate calculations to normalize pricing data.
 
 # 📊 Key Findings & Product Insights
+1. The "Generalist Gap"
 Visual analysis revealed that while Blinkit competes well on speed (~11.5 mins), it completely abandons parents in specialized niche categories. For example, in the Mom care category, OZi and FirstCry maintained a 100% fill rate, while Blinkit dropped to just 25%.
 
 2. The Assortment Bias
