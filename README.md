@@ -27,7 +27,6 @@ The goal of this analysis was to test a core product hypothesis: Generalist quic
 
 
 # 🛠 Tools Used
-1. The "Generalist Gap"
 Data Collection: Manual scraping & cart testing to capture true unit economics (bypassing welcome coupons and price-anchoring dark patterns).
 
 Google Sheets: Exploratory Data Analysis (EDA) and data structuring.
@@ -39,13 +38,17 @@ SQL (SQLite): Relational data filtering, Common Table Expressions (CTEs), and ag
 # 📊 Key Findings & Product Insights
 1. The "Generalist Gap"
 Visual analysis revealed that while Blinkit competes well on speed (~11.5 mins), it is not specialized for niche categories. For example, in the Mom care category, OZi and FirstCry maintained a 100% fill rate, while Blinkit dropped to just 25%.
+<img width="609" height="222" alt="image" src="https://github.com/user-attachments/assets/3ff00a32-2d9d-40f2-9ba9-e7c6a471f1ac" />
 
-2. The Assortment Bias
+<img width="758" height="371" alt="image" src="https://github.com/user-attachments/assets/46908599-97fc-4eb0-9ff9-2df61113170e" />
+
+
+3. The Assortment Bias
 Initial raw category averages made FirstCry appear artificially expensive. Visualizing the data proved this was an illusion caused by Assortment Bias: FirstCry frequently stocked out of basic, lower-priced items in the Health and wellness and Bath and skin categories, leaving only premium items to pull their average up.
 <img width="702" height="398" alt="image" src="https://github.com/user-attachments/assets/3fff5f1a-ee6c-47a1-9a90-a2046896ad93" />
 
 
-3. The "Apples-to-Apples" Price Winner
+5. The "Apples-to-Apples" Price Winner
 To remove the Assortment Bias, I engineered a SQL CTE to isolate only the products available across all three platforms simultaneously (a 12-item overlapping basket).
 
 When comparing the exact same basket of goods, the true average landed cost (Discounted Price + Delivery + Handling):
@@ -53,3 +56,11 @@ When comparing the exact same basket of goods, the true average landed cost (Dis
 
 
 Conclusion: OZi successfully bridges the market gap. They match the specialized catalog depth of the e-commerce giant (FirstCry) while delivering products exponentially faster, all while maintaining the lowest true basket cost.
+
+# Results for additional SQL queries
+- brand availability
+<img width="728" height="685" alt="image" src="https://github.com/user-attachments/assets/190f02e3-e2f1-4eca-afa3-275884dfa7c9" />
+
+- item stock %
+<img width="1025" height="575" alt="image" src="https://github.com/user-attachments/assets/0ef4ef65-3c9d-4983-821d-73cf3eb83aa6" />
+
