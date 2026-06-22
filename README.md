@@ -43,12 +43,12 @@ Visual analysis revealed that while Blinkit competes well on speed (~11.5 mins),
 <img width="758" height="371" alt="image" src="https://github.com/user-attachments/assets/46908599-97fc-4eb0-9ff9-2df61113170e" />
 
 
-3. The Assortment Bias
+2. The Assortment Bias
 Initial raw category averages made FirstCry appear artificially expensive. Visualizing the data proved this was an illusion caused by Assortment Bias: FirstCry frequently stocked out of basic, lower-priced items in the Health and wellness and Bath and skin categories, leaving only premium items to pull their average up.
 <img width="702" height="398" alt="image" src="https://github.com/user-attachments/assets/3fff5f1a-ee6c-47a1-9a90-a2046896ad93" />
 
 
-5. The "Apples-to-Apples" Price Winner
+3. The "Apples-to-Apples" Price Winner
 To remove the Assortment Bias, I engineered a SQL CTE to isolate only the products available across all three platforms simultaneously (a 12-item overlapping basket).
 
 When comparing the exact same basket of goods, the true average landed cost (Discounted Price + Delivery + Handling):
